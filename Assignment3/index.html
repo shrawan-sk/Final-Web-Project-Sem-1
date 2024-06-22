@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" width="578px" height="186px" alt="Centennial College">
+    </header>
+    <main>
+        <h1>Instructor Evaluation Form</h1>
+        <p>
+            Please read each statement and use the 
+            <span class="bold">form options</span>
+             to make your choice
+        </p>
+        <form>
+            <fieldset>
+                <legend>Course Information</legend>
+                <label class="block" for="coursename">Course Name</label>
+                <input type="text" id="coursename">
+                <p>Semester</p>
+                <input type="radio" id="winter" name="semester">
+                <label for="winter">Winter</label>
+                <input type="radio" id="springsummer" name="semester">
+                <label for="springsummer">Spring/Summer</label>
+                <input type="radio" id="fall" name="semester">
+                <label for="fall">Fall</label>
+                <label class="block" for="year">Year</label>
+                <input type="number" id="year" min="1990" value="2023">
+                <label class="block" for="name">Instructor's Name</label>
+                <input type="text" id="name">
+            </fieldset>
+
+            <fieldset>
+                <legend>Student Feedback</legend>
+                <label for="effectiveness" class="block">How effective was the instructor's teaching</label>
+                <select name="effictiveness" id="effectiveness">
+                    <option value="Excellent">Excellent</option>
+                    <option value="Good">Good</option>
+                    <option value="Fair">Fair</option>
+                    <option value="Not Satisfactory">Not Satisfactory</option>
+                </select>
+                <label for="helpful" class="block">How helpful were the course materials?</label>
+                <input list="helpfulness" name="helpful" id="helpful">
+                <datalist id="helpfulness">
+                    <option value="Very Helpful">Very Helpful</option>
+                    <option value="Helpful">Helpful</option>
+                    <option value="Unhelpful">Unhelpful</option>
+                    <option value="Very Unhelpful">Very Unhelpful</option>
+                </datalist>
+                <label for="comments" class="block">Do you have any other comments?</label>
+                <textarea id="comments" cols="100" rows="10"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Form Submission</legend>
+                <input type="submit" value="Submit Form">
+                <input type="reset" value="Reset Form">
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>
+            Thank you! We pay attension to your feedback!
+            <span class="block">
+                Web: 
+                <a href="www.centennialcollege.ca">Centennial College Website</a>
+            </span>
+            <span>
+                Email: 
+                <a href="mailto:feedback@centennialcollege.ca">feedback@sentennialcollege.ca</a>
+            </span>
+        </p>
+    </footer>
+</body>
+</html>
